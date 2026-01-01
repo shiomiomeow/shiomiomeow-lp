@@ -85,8 +85,8 @@
 import { ref, watch, onUnmounted } from 'vue'
 
 const links = {
-  logical: 'https://www.youtube.com/@YourChannel',
-  physical: 'https://github.com/YourID'
+  logical: 'https://logical.shiomiomeow.com',
+  physical: 'https://physical.shiomiomeow.com',
 }
 
 const isMeowMode = ref(false)
@@ -115,4 +115,17 @@ const handleAvatarClick = () => {
 }
 
 onUnmounted(() => clearInterval(consoleInterval))
+
+useSeoMeta({
+  title: '汐猫みお Official Site | Logical & Physical',
+  ogTitle: '汐猫みお Official Site',
+  description: '論理（VTuber）と物理（セキュリティ・低レイヤー）の狭間で活動する、汐猫みおの公式サイト。',
+  ogDescription: '論理（VTuber）と物理（セキュリティ・低レイヤー）の狭間で活動する、汐猫みおの公式サイト。',
+  ogImage: 'https://shiomiomeow.com/ogp-image.png',
+  twitterCard: 'summary_large_image',
+  twitterSite: '@shionemio',
+  twitterTitle: '汐猫みお Official Site',
+  twitterDescription: '論理（VTuber）と物理（セキュリティ）の深淵を覗く場所。',
+  twitterImage: 'https://shiomiomeow.com/ogp-image.png',
+})
 </script>
