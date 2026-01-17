@@ -13,7 +13,7 @@
           <img :src="isMeowMode ? '/avatar_cat.png' : '/avatar.webp'" alt="Mio" class="w-full h-full object-cover" />
         </button>
         <div class="mt-6 px-8 py-3 bg-slate-900 text-white rounded-md shadow-lg pointer-events-auto">
-          <h1 class="text-lg md:text-2xl font-black tracking-[0.2em] uppercase">{{ isMeowMode ? 'Nyanneko Mio' : 'Shioneko Mio' }}</h1>
+          <h1 class="text-lg md:text-2xl font-black tracking-[0.2em] uppercase">{{ isMeowMode ? 'Nyanne Mio' : 'SHIONE Mio' }}</h1>
         </div>
       </div>
     </div>
@@ -85,8 +85,8 @@
 import { ref, watch, onUnmounted } from 'vue'
 
 const links = {
-  logical: 'https://logical.shiomiomeow.com',
-  physical: 'https://physical.shiomiomeow.com',
+  logical: 'https://logical.shiomiolog.com',
+  physical: 'https://physical.shiomiolog.com',
 }
 
 const isMeowMode = ref(false)
@@ -121,11 +121,11 @@ useSeoMeta({
   ogTitle: '汐猫みお Official Site',
   description: '論理（VTuber）と物理（セキュリティ・低レイヤー）の狭間で活動する、汐猫みおの公式サイト。',
   ogDescription: '論理（VTuber）と物理（セキュリティ・低レイヤー）の狭間で活動する、汐猫みおの公式サイト。',
-  ogImage: 'https://shiomiomeow.com/ogp-image.png',
+  ogImage: 'https://shiomiolog.com/ogp-image.png',
   twitterCard: 'summary_large_image',
   twitterSite: '@shionemio',
   twitterTitle: '汐猫みお Official Site',
   twitterDescription: '論理（VTuber）と物理（セキュリティ）の深淵を覗く場所。',
-  twitterImage: 'https://shiomiomeow.com/ogp-image.png',
+  twitterImage: 'https://shiomiolog.com/ogp-image.png',
 })
 </script>
